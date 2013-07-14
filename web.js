@@ -3,7 +3,7 @@ var express = require('express');
 var app = express.createServer(express.logger());
 
 var str = fs.readFileSync(index.html);
-var buffedStr = str.toString("utf-8",0,27);
+var buffedStr = str.toString("utf-8",0,26);
 
 
 app.get('/', function(request, response) {
